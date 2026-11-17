@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stellar Lens</title>
+
+  <!-- Fonts from Google Fonts (needs internet) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;700&display=swap">
+
+  <!-- Small logo shown in the browser tab -->
+  <link rel="icon" href="logo.png" type="image/svg+xml">
+
+  <!-- Our own styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER AND MENU ========== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <!-- The logo picture. alt is empty because the name is written next to it. -->
+        <img src="logo.png" alt="" width="36" height="36">
+        Stellar Lens
+      </a>
+
+      <nav id="nav" class="nav">
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="button small">Book a Shoot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HOME ========== -->
+    <section id="home" class="section hero">
+      <div class="container">
+        <p class="label">Freelance photography studio</p>
+        <h1>Photographs that keep the day the way it felt.</h1>
+        <p class="intro">
+          Stellar Lens is a one-person studio for weddings, portraits, events and
+          product photos. Browse the galleries, pick a package with the price
+          already listed, and send a booking request in two minutes.
+        </p>
+        <a href="#contact" class="button">Book a shoot</a>
+        <a href="#portfolio" class="button outline">See the portfolio</a>
+      </div>
+    </section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <p class="intro">A few sample frames from each kind of shoot.</p>
+
+        
+        <div class="gallery">
+          <div class="photo"><img src="golden hour.jpg" alt="golden hour"><span>Golden Hour</span></div>
+          <div class="photo"><img src="ceramic.jpg" alt="ceramics in window light"><span>Ceramics in window light</span></div>
+          <div class="photo"><img src="studio.jpg" alt="studio portrait"><span>Studio portrait</span></div>
+          <div class="photo"><img src="debut.jpg" alt="debut night"><span>Debut night</span></div>
+          <div class="photo"><img src="garden.jpg" alt="garden ceremony"><span>Garden ceremony</span></div>
+          <div class="photo"><img src="graduation.jpg" alt="graduation day"><span>Graduation day</span></div>
+          <div class="photo"><img src="reunion.jpg" alt="family reunion"><span>Family reunion</span></div>
+          <div class="photo"><img src="skincare.jpg" alt="skincare launch"><span>Skincare launch</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="section gray">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="intro">
+          Every package includes a private online gallery and light editing on
+          every delivered photo.
+        </p>
+
+        <div class="plans">
+          <div class="plan">
+            <h3>Essential</h3>
+            <p class="small-text">Portraits, graduations and small shoots</p>
+            <p class="price">₱3,500 <span>starting</span></p>
+            <ul>
+              <li>1 hour at one location</li>
+              <li>20 edited photos</li>
+              <li>Online gallery for 30 days</li>
+            </ul>
+            <a href="#contact" class="button outline">Book Essential</a>
+          </div>
+
+          <div class="plan featured">
+            <h3>Signature</h3>
+            <p class="small-text">Debuts, christenings and family events</p>
+            <p class="price">₱7,500 <span>starting</span></p>
+            <ul>
+              <li>3 hours of coverage</li>
+              <li>80 edited photos</li>
+              <li>10 printed 5×7 photos</li>
+              <li>Online gallery for 60 days</li>
+            </ul>
+            <a href="#contact" class="button">Book Signature</a>
+          </div>
+
+          <div class="plan">
+            <h3>Story</h3>
+            <p class="small-text">A full wedding day</p>
+            <p class="price">₱15,000 <span>starting</span></p>
+            <ul>
+              <li>8 hours of coverage</li>
+              <li>300+ edited photos</li>
+              <li>Second photographer</li>
+              <li>20-page printed album</li>
+            </ul>
+            <a href="#contact" class="button outline">Book Story</a>
+          </div>
+        </div>
+
+        <!-- FAQ: <details> opens and closes by itself, no JavaScript needed -->
+        <h3 class="faq-title">Questions people ask first</h3>
+        <details>
+          <summary>How long until I get my photos?</summary>
+          <p>A 10-photo sneak peek arrives in 48 hours. The full gallery arrives within 10 days, or 14 days for weddings.</p>
+        </details>
+        <details>
+          <summary>How do I reserve a date?</summary>
+          <p>Send the booking form below. A 30% deposit holds your date, and the balance is due on the day of the shoot.</p>
+        </details>
+        <details>
+          <summary>Can I reschedule?</summary>
+          <p>Yes. You can move your date once for free if you tell the studio at least 7 days before.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I started Stellar Lens in 2024 after years of shooting friends'
+          weddings and family parties for free. People kept asking what I
+          charged, so I made it a real studio.
+        </p>
+        <p>
+          My style is natural light and warm, true color. I arrive early, find
+          the best light in the room, and stay out of the way so people forget
+          the camera is there.
+        </p>
+        <ul class="facts">
+          <li><strong>Started:</strong> 2024, Metro Manila</li>
+          <li><strong>Kit:</strong> two mirrorless cameras, 35mm and 85mm lenses</li>
+          <li><strong>Look:</strong> natural light, warm tones, light editing</li>
+          <li><strong>Replies:</strong> within one day</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section id="testimonials" class="section dark">
+      <div class="container">
+        <h2>Testimonials</h2>
+
+        <div class="testimonial">
+          <p>“Stellar Lens arrived early, found the best light in our venue before we did, and our guests never noticed the camera.”</p>
+          <strong>Joanna and Paolo, wedding</strong>
+        </div>
+        <div class="testimonial">
+          <p>“Graduation photos took forty minutes and I look like myself on a good day. My parents ordered prints that same night.”</p>
+          <strong>Kyle D., graduation shoot</strong>
+        </div>
+        <div class="testimonial">
+          <p>“She kept our toddler laughing through the whole christening and still caught the quiet moment at the font.”</p>
+          <strong>The Reyes family, christening</strong>
+        </div>
+        <div class="testimonial">
+          <p>“Our candles finally look the way they smell. The product shots went straight onto our shop page.”</p>
+          <strong>Bea, candle maker</strong>
+        </div>
+
+        <p class="small-text">Sample reviews written for this class project.</p>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section gray">
+      <div class="container">
+        <h2>Contact and booking</h2>
+        <p class="intro">Fill in what you know. A reply comes within one day.</p>
+
+        <!-- For now this form only collects the details. Sending it needs extra code, which comes later. -->
+        <form>
+          <label for="name">Your name</label>
+          <input id="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+
+          <label for="type">Shoot type</label>
+          <select id="type" required>
+            <option value="">Choose one</option>
+            <option>Wedding</option>
+            <option>Debut or birthday</option>
+            <option>Christening</option>
+            <option>Graduation</option>
+            <option>Family portrait</option>
+            <option>Product or brand</option>
+          </select>
+
+          <label for="date">Preferred date</label>
+          <input id="date" type="date" required>
+
+          <label for="location">Location</label>
+          <input id="location" type="text" placeholder="Venue or city">
+
+          <label for="message">Anything else?</label>
+          <textarea id="message" rows="4"></textarea>
+
+          <button type="submit" class="button">Send booking request</button>
+        </form>
+
+        <h3>Studio details</h3>
+        <p>Email: stellarlens@gmail.com</p>
+        <p>Phone: 0912 345 6789</p>
+        <p>Service area: Metro Manila and nearby provinces</p>
+        <p>
+          <a href="https://www.facebook.com/frenzj.opena.1/" target="_blank" rel="noopener">Facebook</a> ·
+          <a href="https://www.instagram.com/exusia7/" target="_blank" rel="noopener">Instagram</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Stellar Lens. A fictional studio made for a class project. Contact details and reviews are samples.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
