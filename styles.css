@@ -1,6 +1,4 @@
-
-
-/* ---------- 1. COLORS AND FONTS ---------- */
+/* ---------- COLORS AND FONTS ---------- */
 :root {
   --background: #F7F3EC;   
   --text: #1F1F1F;         
@@ -11,7 +9,7 @@
 }
 
 
-/* ---------- 2. BASICS ---------- */
+/* ---------- BASICS ---------- */
 * {
   box-sizing: border-box;   /* padding does not make boxes wider */
 }
@@ -26,6 +24,49 @@ body {
   color: var(--text);
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.6;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+/* ---------- BUTTONS ---------- */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid var(--accent);
+  border-radius: 30px;
+  background: var(--accent);
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.button.outline {            
+  background: transparent;
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.button.small {
+  padding: 8px 16px;
+}
+
+/* On the nav, the small button keeps white text */
+.nav a.button {
+  color: white;
 }
 
 h1, h2, h3 {
@@ -65,7 +106,7 @@ a { color: var(--text); }
 
 
 
-/* ---------- 3. HEADER ---------- */
+/* ---------- HEADER ---------- */
 .header {
   position: sticky;        /* stays at the top while scrolling */
   top: 0;
@@ -91,52 +132,7 @@ a { color: var(--text); }
   text-decoration: none;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.nav a {
-  text-decoration: none;
-}
-
-
-/* ---------- 4. BUTTONS ---------- */
-.button {
-  display: inline-block;
-  padding: 12px 24px;
-  border: 2px solid var(--accent);
-  border-radius: 30px;
-  background: var(--accent);
-  color: white;
-  font: inherit;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  opacity: 0.85;
-}
-
-.button.outline {            /* empty button with a border */
-  background: transparent;
-  color: var(--text);
-  border-color: var(--text);
-}
-
-.button.small {
-  padding: 8px 16px;
-}
-
-/* On the nav, the small button keeps white text */
-.nav a.button {
-  color: white;
-}
-
-
-/* ---------- 5. PAGE SECTIONS ---------- */
+/* ---------- PAGE SECTIONS ---------- */
 .section {
   padding: 70px 0;
 }
@@ -159,184 +155,4 @@ a { color: var(--text); }
 
 .facts {
   padding-left: 20px;
-}
-
-
-/* ---------- 6. PORTFOLIO ---------- */
-/* Grid: 4 equal columns */
-.gallery {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-/* One photo box */
-.photo {
-  display: flex;
-  align-items: flex-end;
-  aspect-ratio: 4 / 5;
-  position: relative;        /* lets the caption sit on top of the picture */
-  border-radius: 4px;
-  overflow: hidden;
-  color: white;
-  font-weight: 600;
-}
-.photo span {
-  position: absolute;
-  left: 12px;
-  bottom: 12px;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
-}
-/* If you add a real <img>, it fills the box */
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Placeholder colors for each type of shoot */
-.photo.wedding  { background: linear-gradient(#F3CFA8, #D98B62); }
-.photo.portrait { background: linear-gradient(#C9A98A, #8A4A2E); }
-.photo.event    { background: linear-gradient(#2B2430, #6A3B3A); }
-.photo.product  { background: linear-gradient(#B9C5A8, #566648); }
-
-
-/* ---------- 7. SERVICES ---------- */
-.plans {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin: 30px 0 50px;
-}
-
-.plan {
-  padding: 24px;
-  background: var(--background);
-  border: 1px solid var(--muted);
-  border-radius: 4px;
-}
-
-.plan.featured {              /* the middle, most-booked package */
-  background: var(--text);
-  color: var(--background);
-}
-
-.plan.featured .small-text {
-  color: var(--background);
-}
-
-.plan.featured .button {
-  background: var(--background);
-  color: var(--text);
-  border-color: var(--background);
-}
-
-.price {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 8px 0;
-}
-
-.price span {
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-
-.plan ul {
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-details {
-  padding: 14px 0;
-  border-top: 1px solid var(--muted);
-  max-width: 700px;
-}
-
-summary {
-  font-weight: 600;
-  cursor: pointer;
-}
-
-
-/* ---------- 8. TESTIMONIALS ---------- */
-.testimonial {
-  max-width: 700px;
-  margin-bottom: 36px;
-}
-
-/* Small text on the dark section needs a light color to be readable */
-.section.dark .small-text {
-  color: var(--sand);
-}
-
-.testimonial p {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.3rem;
-  line-height: 1.4;
-}
-
-
-/* ---------- 9. FORM ---------- */
-form {
-  display: grid;
-  gap: 8px;
-  max-width: 500px;
-  margin-bottom: 20px;
-}
-
-label {
-  font-weight: 600;
-  margin-top: 8px;
-}
-
-input, select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--muted);
-  border-radius: 4px;
-  background: white;
-  font: inherit;
-}
-
-form .button {
-  margin-top: 16px;
-}
-
-
-/* ---------- 10. FOOTER ---------- */
-.footer {
-  padding: 30px 0;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-
-/* ---------- 11. PHONE LAYOUT ----------
-   These rules only apply on screens 800px wide or smaller. */
-@media (max-width: 800px) {
-  h1 { font-size: 2.2rem; }
-  h2 { font-size: 1.8rem; }
-
-  .gallery { grid-template-columns: repeat(2, 1fr); }  /* 2 columns */
-  .plans   { grid-template-columns: 1fr; }             /* 1 column */
-
-  /* Logo on top, menu links wrap underneath */
-  .header { position: static; }
-
-  .header-inner {
-    flex-direction: column;
-    gap: 8px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 16px;
-  }
 }
